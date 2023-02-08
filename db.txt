@@ -6,6 +6,7 @@
 
 |      COLONNA       |      TIPO    |        ATTRIBUTI        |    CHIAVI    |            
 ------------------------------------------------------------------------------
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>                                             
 | Id                 | INT          | AUTO_INCREMENT,NOT_NULL | PRIMARY KEY  |
 | Targa              | VARCHAR (9)  | NOT_NULL                | INDEX        |           
 | Marca              | VARCHAR (30) | NOT_NULL                |              |
@@ -24,7 +25,7 @@
 | Garanzia           | TINYINT      | DATE                    |              |
 | *Condizioni_auto   | TINYINT      | NOT_NULL                |              |
 | Ruota_di_Scorta    | TINYINT      | NULL                    |              |
-| Colore             | varchar (20) | NOT_NULL
+| Colore             | varchar (20) | NOT_NULL                |              | 
 | Foto               | varchar (10) | NOT_NULL                |              | 
 ------------------------------------------------------------------------------
 
