@@ -1,0 +1,38 @@
+* Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.*
+
+- DATABASE RELAZIONALE AUTOMOBILI USATE -
+
+*LISTA AUTOMOBILI USATE*
+
+|      COLONNA       |      TIPO    |        ATTRIBUTI        |    CHIAVI    |            
+------------------------------------------------------------------------------
+| Id                 | INT          | AUTO_INCREMENT,NOT_NULL | PRIMARY KEY  |
+| Targa              | VARCHAR (9)  | NOT_NULL                | INDEX        |           
+| Marca              | VARCHAR (30) | NOT_NULL                |              |
+| Modello            | VARCHAR (30) | NOT_NULL                |              |
+| Tipo_di_Veicolo    | VARCHAR (20) | NOT_NULL                |              |
+| Km                 | DOUBLE (6,3) | NOT_NULL                |              | 
+| Posti_Auto         | TINYINT      | NOT_NULL defoult(10)    |              |
+| *Carburante        | TINYINT      | NOT_NULL                |              |
+| *Cambio            | TINYINT      | NOT_NULL                |              |
+| Mese/anno_Immatr.  | DATE         | NOT_NULL                |              |
+| Tipo_carrozzeria   | VARCHAR (50) | NOT_NULL                |              |
+| Tipo_alimentazione | VARCHAR (50) | NOT_NULL                |              |
+| Cavalli            | SMALLINT     | NOT_NULL                |              |
+| Prezzo             | FLOAT(7,4)   | NOT_NULL                |              |
+| Modifiche          | TINYINT      | NOT_NULL                |              |
+| Garanzia           | TINYINT      | DATE                    |              |
+| *Condizioni_auto   | TINYINT      | NOT_NULL                |              |
+| Ruota_di_Scorta    | TINYINT      | NULL                    |              |
+| Colore             | varchar (20) | NOT_NULL
+| Foto               | varchar (10) | NOT_NULL                |              | 
+------------------------------------------------------------------------------
+
+*CONDIZIONI_AUTO                |   *CAMBIO                        |  *CARBURANTE
+ VALORI     -  SIGNIFICATO      |    VALORI   -   SIGNIFICATO      |   VALORE   -   SIGNIFICATO
+          1 | - Ottimo_Stato    |           1 | - Manuale          |          1 | - Benzina
+          2 | - Buono_Stato     |           2 | - Automatico       |          2 | - Diesel
+          3 | - Da Sistemare    |             |                    |          3 | - Metano
+          4 | - Ricambi         |             |                    |          4 | - G.P.L.
+
+
